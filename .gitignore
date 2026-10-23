@@ -1,0 +1,7 @@
+.venv/
+__pycache__/
+*.py[cod]
+.DS_Store
+out/
+demos/routh_gain_app.html
+.ipynb_checkpoints/
