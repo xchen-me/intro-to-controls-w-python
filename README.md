@@ -58,6 +58,22 @@ python examples/L10_repeated_poles.py --save out/repeated-poles.png
 
 The repeated-pole experiment compares numerical roots of expanded `(s+1)^12` and `(s+1)^20` against the exact repeated root −1. Small coefficient perturbations can move individual roots appreciably. Use analytical structure and a stability test to interpret numerical output; numerical root finding remains useful.
 
+## Live repeated-pole laboratory
+
+```bash
+python demos/repeated_poles_app.py
+```
+
+Open the printed URL (port 8767), vary **n** from 2 to 40, and watch NumPy recompute the roots of the expanded polynomial `(s+1)^n`. The code, pole map, and maximum displacement from −1 update together. This is the live demonstration embedded in Lecture 10, slide 4.
+
+This demo executes Python/NumPy in the browser using Pyodide 0.27.7 in a Web Worker. **Internet access is required on first load** to download the runtime and NumPy. The initial reference plot is labeled until Python is ready; calculations run locally in the browser. Root clusters vary with the NumPy build and platform.
+
+```bash
+python demos/repeated_poles_app.py --n 20        # run locally without a browser
+python demos/repeated_poles_app.py --build-only # export the browser app
+python demos/repeated_poles_app.py --port 8769  # choose another port
+```
+
 ## Course examples
 
 | Lecture | Script | Explore |

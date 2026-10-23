@@ -5,3 +5,4 @@ __pycache__/
 out/
 demos/routh_gain_app.html
 .ipynb_checkpoints/
+demos/repeated_poles_app.html
